@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATRIX XXI — Company Visit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="brand-mark">M</span>
+      <span class="brand-text">MATRIX XXI</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#company-visit">Company Visit</a>
+      <a href="#company-list">Main Event</a>
+      <a href="#" >Career Hub</a>
+      <a href="#">Integral</a>
+    </nav>
+    <div class="nav-auth">
+      <button class="btn-ghost">Log In</button>
+      <button class="btn-solid">Sign In</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-sky"></div>
+  <div class="hero-content">
+    <p class="eyebrow">Pre-Event MATRIX XXI</p>
+    <h1 class="script-title">Company Visit</h1>
+
+    <div class="countdown" id="countdown" aria-live="polite">
+      <div class="count-box"><span id="cd-days">00</span><small>Hari</small></div>
+      <span class="colon">:</span>
+      <div class="count-box"><span id="cd-hours">00</span><small>Jam</small></div>
+      <span class="colon">:</span>
+      <div class="count-box"><span id="cd-mins">00</span><small>Menit</small></div>
+      <span class="colon">:</span>
+      <div class="count-box"><span id="cd-secs">00</span><small>Detik</small></div>
+    </div>
+
+    <p class="seat-info">Available seat : <strong><span id="seatCount">100</span></strong></p>
+    <a href="#registration" class="btn-cta">Join the Flight !</a>
+  </div>
+  <svg class="hero-plane" viewBox="0 0 120 120" width="70">
+    <path d="M60 5 L68 45 L110 65 L68 70 L64 110 L58 110 L54 70 L12 65 L54 45 Z" fill="var(--gold)"/>
+  </svg>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="company-visit">
+  <div class="about-inner reveal">
+    <h2>Apa itu <span class="script-inline">Company Visit</span>?</h2>
+    <p>
+      Company Visit merupakan rangkaian Pre-Event MATRIX XXI yang memberikan kesempatan kepada
+      mahasiswa untuk mengenal dunia profesional secara langsung melalui kunjungan ke perusahaan.
+      Peserta akan memperoleh pemaparan mengenai profil perusahaan, budaya kerja, lingkungan
+      profesional, dan prospek karier, serta berkesempatan berdiskusi dengan profesional dari
+      perusahaan mitra.
+    </p>
+    <div class="date-chip">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 2v4M16 2v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      Selasa, 29 September 2026
+    </div>
+  </div>
+</section>
+
+<!-- WHY JOIN -->
+<section class="why">
+  <h2 class="reveal">Why Join Company Visit?</h2>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-icon">🧭</div>
+      <h3>Gain Industry Insights</h3>
+      <p>Memahami bagaimana teori yang dipelajari di kampus diterapkan di dunia industri.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">🤝</div>
+      <h3>Build Real Connections</h3>
+      <p>Bertemu profesional dan membangun relasi baru.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">🎓</div>
+      <h3>Explore Career Opportunities</h3>
+      <p>Mengenal berbagai jalur karier yang tersedia.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">🏢</div>
+      <h3>Experience Workplace Culture</h3>
+      <p>Merasakan langsung suasana kerja di perusahaan.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-icon">💡</div>
+      <h3>Learn Beyond the Classroom</h3>
+      <p>Mendapat pengalaman yang tidak diperoleh melalui perkuliahan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMPANY LIST (folder animation) -->
+<section class="company-list" id="company-list">
+  <h2 class="reveal">Company List</h2>
+  <p class="section-sub reveal">Buka folder paket untuk melihat perusahaan mitra kunjungan.</p>
+
+  <div class="folders reveal">
+    <button class="folder-tab" data-target="package-1" data-active="true">
+      <span>Package 1</span>
+    </button>
+    <button class="folder-tab" data-target="package-2">
+      <span>Package 2</span>
+    </button>
+  </div>
+
+  <div class="folder-stage">
+    <!-- Folder back (holds papers) -->
+    <div class="folder" id="folder">
+      <div class="folder-back"></div>
+
+      <div class="papers" id="papers-package-1">
+        <article class="company-card">
+          <div class="company-card-top">
+            <div class="company-logo">🏦</div>
+            <div>
+              <h3>Bank Indonesia</h3>
+              <a href="https://www.bi.go.id" target="_blank" rel="noopener">bi.go.id</a>
+            </div>
+          </div>
+          <p>Bank Indonesia (BI) adalah bank sentral Republik Indonesia yang bertugas menjaga
+             kestabilan nilai rupiah dan mengatur sistem keuangan nasional.</p>
+          <div class="company-map-wrap">
+            <iframe class="company-map" title="Peta Bank Indonesia" loading="lazy"
+              src="https://www.google.com/maps?q=Bank+Indonesia,+Jl.+M.H.+Thamrin+No.2,+Jakarta&output=embed"></iframe>
+          </div>
+          <p class="company-address">📍 Jl. M.H. Thamrin No.2, 10350, Jakarta Pusat, DKI Jakarta</p>
+        </article>
+      </div>
+
+      <div class="papers hidden" id="papers-package-2">
+        <article class="company-card">
+          <div class="company-card-top">
+            <div class="company-logo">🏢</div>
+            <div>
+              <h3>PT. Matrix XXI</h3>
+              <a href="https://matrixxxi.com" target="_blank" rel="noopener">matrixxxi.com</a>
+            </div>
+          </div>
+          <p>Perusahaan yang bergerak di bidang pengembangan karier dan edukasi mahasiswa
+             melalui rangkaian program MATRIX XXI.</p>
+          <div class="company-map-wrap">
+            <iframe class="company-map" title="Peta PT Matrix XXI" loading="lazy"
+              src="https://www.google.com/maps?q=Jl.+Margonda+Raya,+Beji,+Depok&output=embed"></iframe>
+          </div>
+          <p class="company-address">📍 Jl. Margonda Raya, Kec. Beji, Kota Depok, Jawa Barat 16424</p>
+        </article>
+      </div>
+
+      <div class="folder-front"></div>
+      <div class="folder-tab-shape"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPTURED MOMENTS -->
+<section class="captured">
+  <h2 class="reveal">Captured Moments</h2>
+  <p class="section-sub reveal">Explore memorable moments from our previous company visits and see
+     what awaits you on your next journey.</p>
+  <div class="moments-track reveal">
+    <div class="moment-card"><div class="moment-img">🧑‍💼📊</div></div>
+    <div class="moment-card"><div class="moment-img">🏭🦺</div></div>
+    <div class="moment-card"><div class="moment-img">🚶‍♂️🚶‍♀️</div></div>
+    <div class="moment-card"><div class="moment-img">🤝📋</div></div>
+  </div>
+  <div class="dots">
+    <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  </div>
+</section>
+
+<!-- REGISTRATION -->
+<section class="registration" id="registration">
+  <h2 class="reveal">Registration Form</h2>
+  <p class="seat-info reveal">Available seat : <strong>100</strong></p>
+
+  <div class="form-card reveal">
+    <div class="steps" id="steps">
+      <div class="step active" data-step="1">1<span>Paket</span></div>
+      <div class="step" data-step="2">2<span>Tiket</span></div>
+      <div class="step" data-step="3">3<span>Data Diri</span></div>
+      <div class="step" data-step="4">4<span>Pembayaran</span></div>
+      <div class="step" data-step="5">5<span>Selesai</span></div>
+    </div>
+
+    <form id="regForm">
+      <!-- Step 1: Choose package -->
+      <div class="form-step active" data-form-step="1">
+        <h3>Pilih Paket</h3>
+        <div class="package-choice">
+          <label class="package-option">
+            <input type="radio" name="package" value="1" checked>
+            <span>Package 1</span>
+          </label>
+          <label class="package-option">
+            <input type="radio" name="package" value="2">
+            <span>Package 2</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 2: Ticket type -->
+      <div class="form-step" data-form-step="2">
+        <h3>Pilih Jenis Tiket</h3>
+        <div class="ticket-choice">
+          <label class="ticket-option">
+            <input type="radio" name="ticket" value="single" checked>
+            <span>Single Ticket</span>
+          </label>
+          <label class="ticket-option">
+            <input type="radio" name="ticket" value="bundle3">
+            <span>Bundling 3 Ticket</span>
+          </label>
+          <label class="ticket-option">
+            <input type="radio" name="ticket" value="bundle5">
+            <span>Bundling 5 Ticket</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Step 3: Personal data -->
+      <div class="form-step" data-form-step="3">
+        <h3>Data Diri</h3>
+        <div id="personsWrap"></div>
+      </div>
+
+      <!-- Step 4: Payment -->
+      <div class="form-step" data-form-step="4">
+        <h3>Pembayaran</h3>
+        <div class="payment-box">
+          <div class="qr-placeholder">
+            <svg width="120" height="120" viewBox="0 0 100 100"><rect width="100" height="100" fill="#fff"/><g fill="#1B2A52"><rect x="5" y="5" width="20" height="20"/><rect x="75" y="5" width="20" height="20"/><rect x="5" y="75" width="20" height="20"/><rect x="35" y="35" width="10" height="10"/><rect x="55" y="45" width="10" height="10"/><rect x="45" y="60" width="10" height="10"/><rect x="65" y="65" width="10" height="10"/></g></svg>
+            <p>Scan QR untuk membayar</p>
+          </div>
+          <label class="upload-box">
+            <input type="file" accept="image/*">
+            <span>Upload Bukti Pembayaran</span>
+          </label>
+        </div>
+        <label class="agree">
+          <input type="checkbox" required>
+          Pastikan seluruh data yang diisi dan dokumen yang diunggah sudah benar karena perubahan
+          mungkin tidak dapat dilakukan setelah formulir dikirim.
+        </label>
+      </div>
+
+      <!-- Step 5: Done -->
+      <div class="form-step" data-form-step="5">
+        <div class="done-box">
+          <div class="done-check">✓</div>
+          <h3>Pendaftaran Berhasil!</h3>
+          <p class="reminder-title">Jangan Lupa Catat!</p>
+          <ul class="reminder-list">
+            <li><strong>Tanggal:</strong> Selasa, 29 September 2026</li>
+            <li><strong>Waktu:</strong> 06.00 – 18.20</li>
+            <li><strong>Titik Kumpul:</strong> akan diinformasikan lebih lanjut</li>
+            <li><strong>Dress Code:</strong> akan diinformasikan lebih lanjut</li>
+          </ul>
+          <div class="done-actions">
+            <a class="btn-outline" href="#" target="_blank">Add to Google Calendar →</a>
+            <a class="btn-outline" href="#" target="_blank">Board via WhatsApp</a>
+            <a class="btn-outline" href="#" target="_blank">Board via Line</a>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <div class="form-nav">
+      <button type="button" class="btn-outline" id="prevBtn" disabled>Previous</button>
+      <button type="button" class="btn-cta" id="nextBtn">Next</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="brand">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">MATRIX XXI</span>
+      </div>
+      <p class="tagline">Gain Altitude, Expand Your Career Horizon</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#company-visit">Company Visit</a>
+      <a href="#company-list">Main Event</a>
+      <a href="#">Integral</a>
+      <a href="#">Career Hub</a>
+    </nav>
+    <div class="footer-contact">
+      <p>Keep your radar on us!</p>
+      <div class="socials">
+        <span>◎</span><span>♪</span><span>in</span>
+      </div>
+      <p>Contact us</p>
+      <a href="mailto:mathematicscareerexpo.xxi@gmail.com">mathematicscareerexpo.xxi@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
